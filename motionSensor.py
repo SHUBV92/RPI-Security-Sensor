@@ -1,6 +1,7 @@
 from gpiozero import MotionSensor
 
-pir = MotionSensor(4)
+def motionDeteced():
 
-pir.wait_for_motion()
-print("Motion detected!")
+    pir = MotionSensor(4)
+    pir.wait_for_motion()
+    return "Motion detected!"
