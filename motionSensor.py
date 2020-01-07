@@ -1,5 +1,6 @@
 from gpiozero import MotionSensor
 
+
 def motionDeteced():
 
     pir = MotionSensor(4)

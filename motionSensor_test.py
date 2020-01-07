@@ -7,6 +7,4 @@ class NameTestCase(unittest.TestCase):
         result = motionDetected()
         self.assertEqual(result, "Motion detected!")
 
-    # def test_first_last_middle_name(self):
-    #     result = formatted_name("chris", "topher", "barnet")
-    #     self.assertEqual(result, "Chris Topher Barnet")
+  
