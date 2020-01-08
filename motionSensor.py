@@ -1,7 +1,7 @@
 from gpiozero import MotionSensor
 
 
-def motionDeteced():
+def motionDetected():
 
     pir = MotionSensor(4)
     pir.wait_for_motion()
