@@ -1,5 +1,5 @@
 import unittest
-from sensor import sensor
+from sensor import *
 
 class SensorTestCase(unittest.TestCase):
 
