@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.5.0
+services:
+- postgresql
+before_install:
+- gem install -v 1.17.3 bundler
+script:
+- bundle install 
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rspec
+after_script:
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
