@@ -3,15 +3,18 @@ from picamera import PiCamera
 import requests
 from auth import (key)
 
+def cam():
+    camera = PiCamera()
+    camera.capture()
+    camera.close
+
 def pir(motion_sensor):
     pir = motion_sensor(4)
     pir.wait_for_motion()
 
 def sensor(motion_sensor = MotionSensor):
-    camera = PiCamera()
-    pir(motion_sensor)
-    camera.capture()
-    camera.close
+    pir
+    cam()
     r = requests.post(key)
     return "Motion detected!"
 
