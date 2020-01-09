@@ -2,6 +2,7 @@ from gpiozero import MotionSensor
 from picamera import PiCamera
 import requests
 from auth import (key)
+from encoded_img import (image)
 
 def cam():
     camera = PiCamera()
@@ -15,7 +16,7 @@ def pir(motion_sensor):
 def sensor(motion_sensor = MotionSensor):
     pir
     cam()
-    r = requests.post(key)
+    r = requests.post(key, url = URL, params = image)
     return "Motion detected!"
 
 if __name__ == '__main__':
