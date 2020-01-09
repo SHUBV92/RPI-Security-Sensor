@@ -16,7 +16,7 @@ def pir(motion_sensor):
 def sensor(motion_sensor = MotionSensor):
     pir
     cam()
-    r = requests.post(key, url = URL, params = image)
+    r = requests.post(key, URL, params = image)
     return "Motion detected!"
 
 if __name__ == '__main__':
