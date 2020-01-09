@@ -23,8 +23,8 @@ A home security system, using a Raspberry Pi, motion sensor, and camera. Upon de
 - IFTTT with PushOver
 
 ### Framework information
-- python version 2.7.9
-- rails version 5.1.5
+- Python version 2.7.9
+- Rails version 5.1.5
 - Ruby gems - see Gemfile
-- python libraries: gpiozero, picamera, requests
+- Python libraries: gpiozero, picamera, requests
 - Python testing in Unittest, Ruby testing in Rspec, website testing using Capybara
