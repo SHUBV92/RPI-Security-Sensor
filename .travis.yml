@@ -1,17 +1,17 @@
-env:
-  global:
-    CC_TEST_REPORTER_ID=62fd8988f6c5240ad960e154042c4cb6a1caee937653942c4c39561db7dadeff
-
-language: ruby 
-
-rvm: 
--  2.5.0
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
 services:
 - postgresql
 before_install:
 - gem install -v 1.17.3 bundler
-before_script:
-- psql -c 'create database pgapp_test;' -U postgres
-script: bundle install --jobs=3 --retry=3 & bundle exec rake db:create & bundle exec rake db:migrate & bundle exec rspec
- after_script:
+script:
+- bundle install --jobs=3 --retry=3
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rspec
+after_script:
 - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
