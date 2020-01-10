@@ -10,8 +10,12 @@ class FeedController < ApplicationController
   #   end
   # end
 
+  def create
+    @image= Base64.decode64(params[:image])
+  end
+
   def images
-    @image = Base64.decode64(params[:image])
+    @image
     render 'feed/images'
   end
 end
