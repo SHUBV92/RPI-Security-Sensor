@@ -28,3 +28,4 @@ scrollphat/auth.py
 sensor_code/auth.py
 sensor_code/url.py
 
+.vscode
