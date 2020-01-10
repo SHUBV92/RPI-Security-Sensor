@@ -14,8 +14,7 @@ class FeedController < ApplicationController
     @image= Base64.decode64(params[:image])
   end
 
-  def images
+  def show
     @image
-    render 'feed/images'
   end
 end
