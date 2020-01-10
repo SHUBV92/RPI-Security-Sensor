@@ -11,10 +11,9 @@ class FeedController < ApplicationController
   # end
 
   def create
-    @image= Base64.decode64(params[:image])
-  end
-
-  def show
-    @image
+    # @image = Base64.decode64(params[:image])
+    File.open('./app/assets/images/image.png', 'wb+') do |f|
+      f.write(Base64.decode64(params[:image]))
+    end
   end
 end
