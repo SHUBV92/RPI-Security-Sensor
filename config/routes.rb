@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'feed/images'
+  get 'feed/images/:image', to: 'feed#images'
 
   root to: "application#index"
   devise_for :users
