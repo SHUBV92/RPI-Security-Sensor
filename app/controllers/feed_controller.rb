@@ -18,6 +18,7 @@ class FeedController < ApplicationController
     File.open('./app/assets/images/image.png', 'wb+') do |f|
       f.write(Base64.decode64(params[:image]))
     @date = Time.now.strftime('%l:%M%P %-d-%B-%Y')
+    render "feed/images"
     end
   end
 end
