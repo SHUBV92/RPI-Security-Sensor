@@ -68,3 +68,8 @@
     height: 300px;
     width: 220px;
   }
+
+  .border-2 {
+    border-style: solid;
+    border-width: thick;
+  }
