@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   post "/", to: 'feed#create'
 
-  root to: "feed#images"
+  root to: "feed#show"
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
