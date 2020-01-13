@@ -20,7 +20,7 @@ class FeedController < ApplicationController
   end
 
   def show
-    @images = Feed.all
+    @images = Feed.all.order('created_at DESC')
     decode
     render "feed/images"
   end
