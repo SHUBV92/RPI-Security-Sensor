@@ -17,7 +17,7 @@ A home security system, using a Raspberry Pi, motion sensor, and camera. Upon de
   - PiCamera
   - Female-to-female jumper wires
 - How to set up the motion sensor
-- [Link to camera setup] (https://github.com/CamJam-EduKit/EduKit2/blob/master/CamJam%20Edukit%202%20-%20RPi.GPIO/CamJam%20EduKit%202%20-%20Sensors%20Worksheet%205%20(RPi.GPIO)%20-%20Movement.pdf)
+- [Link to camera setup] (https://github.com/CamJam-EduKit/EduKit2/tree/master/CamJam%20Edukit%202%20-%20RPi.GPIO)
 
 ### APIs used
 - IFTTT with PushOver
