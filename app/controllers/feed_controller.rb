@@ -28,7 +28,7 @@ class FeedController < ApplicationController
   def decode
     @images_array = []
     @images.each do |image|
-      @images_array << image.image_string
+      @images_array << image
     end
   end
 end
