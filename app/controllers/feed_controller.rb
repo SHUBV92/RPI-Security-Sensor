@@ -3,7 +3,7 @@ require 'date'
 
 class FeedController < ApplicationController
   skip_before_action :verify_authenticity_token
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   # def create
   #   @image = Base64.decode64(params[:image])
@@ -14,7 +14,7 @@ class FeedController < ApplicationController
   # end
 
   def create
-    File.open('./app/assets/images/image.png', 'wb+') do |f|
+    File.open('./app/assets/images/image1.png', 'wb+') do |f|
       f.write(Base64.decode64(params[:image]))
     @date = Time.now.strftime('%l:%M%P %-d-%B-%Y')
     render "feed/images"
