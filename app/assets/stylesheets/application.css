@@ -69,7 +69,13 @@
     width: 220px;
   }
 
-  .border-2 {
+  .image-border {
     border-style: solid;
     border-width: thick;
+    border-color: black;
+  }
+
+  .date-time {
+    background-color: black;
+    color: white;
   }
