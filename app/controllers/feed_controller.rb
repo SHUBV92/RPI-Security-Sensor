@@ -14,14 +14,13 @@ class FeedController < ApplicationController
   # end
 
   def create
-    File.open('./app/assets/images/image1.png', 'wb+') do |f|
-      f.write(Base64.decode64(params[:image]))
-    @date = Time.now.strftime('%l:%M%P %-d-%B-%Y')
+    @image = Feed.create(image_string: params[:image])
     render "feed/images"
-    end
   end
 end
 
-# filenames.each do |filename|
-#     File.rename(image + id.to_s)
-#     id += 1
+
+
+# File.open('./app/assets/images/image1.png', 'wb+') do |f|
+#   f.write(Base64.decode64(params[:image]))
+# end
