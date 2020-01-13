@@ -4,8 +4,8 @@
 
 <div class="image-feed">
 
-  <% @image.each do |image| %>
-    <%= image %>
+  <% @images_array.each do |image| %>
+    <img src="data:image/png;base64, <%=image%>"/>
   <% end %>
 
 </div>

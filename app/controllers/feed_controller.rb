@@ -13,13 +13,23 @@ class FeedController < ApplicationController
   #   end
   # end
 
+
+
   def create
-    @p_image = Feed.create(image_string: params[:image])
-    render "feed/images"
+    Feed.create(image_string: params[:image])
   end
 
   def show
-    @image = Base64.decode64(@p_image)
+    @images = Feed.all
+    decode
+    render "feed/images"
+  end
+
+  def decode
+    @images_array = []
+    @images.each do |image|
+      @images_array << image.image_string
+    end
   end
 end
 
