@@ -8,6 +8,7 @@
   <div class="p-4">
   <div class="border-2">
     <img src="data:image/png;base64, <%=image%>" class="img-fluid" alt="Responsive image" style="width: 300px; height:220px">
+    <%= image.created_at.strftime("%H:%M on %A %d %b, %Y") %>
   </div>
   </div>
   <% end %>
