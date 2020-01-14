@@ -16,13 +16,13 @@ A home security system, using a Raspberry Pi, motion sensor, and camera. Upon de
   - Breadboard
   - PiCamera
   - Motion Sensor (set to pin 17)
-  - 1 Red LED (set to pin 18)
-  - 1 Blue LED (set to pin 24)
-  - 1 Buzzer (set to pin 22)
-  - 2 resistors
-  - 9 m/f Jumper Wires
-  - 1 m/m Jumper Wire
-See images for setup 
+  - 1x Red LED (set to pin 18)
+  - 1x Blue LED (set to pin 24)
+  - 1x Buzzer (set to pin 22)
+  - 2x Resistors
+  - 9x m/f Jumper Wires
+  - 1x m/m Jumper Wire
+*See images below for further setup details*
 
 ### APIs used
 - IFTTT with PushOver
@@ -33,3 +33,6 @@ See images for setup
 - Ruby gems - see Gemfile
 - Python libraries: gpiozero, picamera, requests
 - Python testing in Unittest, Ruby testing in Rspec, website testing using Capybara
+- Build tested with Travis CI
+
+### Setup images
