@@ -9,12 +9,6 @@ from encoded_img import image_manip
 from registration import (key)
 from url import (URL)
 
-def cam():
-    camera = PiCamera()
-    camera.resolution = (500, 375)
-    camera.capture()
-    camera.close()
-
 def pir(motion_sensor):
     pir = motion_sensor(17)
     pir.wait_for_motion()
