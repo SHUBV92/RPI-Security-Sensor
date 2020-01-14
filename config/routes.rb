@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'feed/images', to: 'feed#images'
+  get 'feed/images', to: 'feed#show'
 
   post "/", to: 'feed#create'
 
