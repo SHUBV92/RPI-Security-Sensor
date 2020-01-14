@@ -3,21 +3,26 @@
 
 A home security system, using a Raspberry Pi, motion sensor, and camera. Upon detecting motion, a picture is taken and sent to a hosted website. A notification is also sent to your phone, including a link to the picture URL.
 
-### Getting Started
+### Setting up Ruby on Rails:
 - Clone the project
-- Build the hardware (see below for instructions)
-- Set up the APIs
-- Run the tests
-- Visit the website & create an account
+- Run 'bundle install'
+- Run 'db:create'
+- Run 'db:migrate'
+- Run 'rspec'
 
-### How to set up the motion sensor and camera
+### Setting up hardware:
 - List of components:
   - Raspberry Pi (any model with wifi can be used)
-  - PIR Sensor on pin 4
+  - Breadboard
   - PiCamera
-  - Female-to-female jumper wires
-- How to set up the motion sensor
-- [Link to camera setup] (https://github.com/CamJam-EduKit/EduKit2/tree/master/CamJam%20Edukit%202%20-%20RPi.GPIO)
+  - Motion Sensor (set to pin 17)
+  - 1 Red LED (set to pin 18)
+  - 1 Blue LED (set to pin 24)
+  - 1 Buzzer (set to pin 22)
+  - 2 resistors
+  - 9 m/f Jumper Wires
+  - 1 m/m Jumper Wire
+See images for setup 
 
 ### APIs used
 - IFTTT with PushOver
