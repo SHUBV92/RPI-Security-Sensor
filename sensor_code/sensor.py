@@ -17,6 +17,7 @@ def sensor(motion_sensor = MotionSensor):
     testing = os.getenv('TESTING', 'False')
     if testing == 'False':
         while True:
+            blue_on()
             pir
             lights_and_sound()
             cam()
