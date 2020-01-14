@@ -21,10 +21,24 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-  <br>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
+<br>
+<br>
 
 </center>
+  <div class="welcome">
+    <center>
+      Welcome to our Raspberry Pi Security Sensor Project, created by five Makers Students from the October 2019 Cohort.<br>
+      A motion sensor is linked to a camera via a Raspberry Pi. When activated, a picture is taken and the image sent to this website.<br>
+      A notification is also sent to a nominated phone number, including a link to the site. <br>
+      This project was created in two weeks, and presented on 17 January 2020 at Makers, London.<br>
+      Further details of the project are available at the<br>
+      <a class="git_link" href="https://github.com/SHUBV92/RPI-Security-Sensor">GitHub Repository.</a>
+    </center>
+  </div>
+
+<%= render "devise/shared/links" %>
