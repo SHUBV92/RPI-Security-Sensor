@@ -2,7 +2,7 @@ import requests
 import os
 import base64
 from time import sleep
-from gpiozero import MotionSensor, LED, Buzzer
+from gpiozero import MotionSensor
 from camera import cam
 from led_buzzer import *
 from encoded_img import image_manip
@@ -19,18 +19,17 @@ def sensor(motion_sensor = MotionSensor):
         while True:
             blue_on()
             pir
-            lights_and_sound()
+            system_on()
             cam()
             image = image_manip()
-            r1 = requests.post(key, URL, params = image)
+            r1 = requests.post(URL, {'image' : image })
             r2 = requests.post(key)
-            print(r1)
-            print(r2)
-            print('done')
+            system_off()
+            #blue_off()
+            sleep(15)
         else:
             print('testing')
             return "Motion detected"
-    time.sleep(30)
 
 if __name__ == '__main__':
     sensor()
