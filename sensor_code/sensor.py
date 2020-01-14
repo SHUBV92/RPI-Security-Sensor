@@ -1,12 +1,13 @@
 import requests
 import os
 import base64
-from gpiozero import MotionSensor
-from picamera import PiCamera
+from time import sleep
+from gpiozero import MotionSensor, LED, Buzzer
+from camera import cam
+from led_buzzer import *
 from encoded_img import image_manip
-from auth import (key)
+from registration import (key)
 from url import (URL)
-from led import lights_and_sound
 
 def cam():
     camera = PiCamera()
