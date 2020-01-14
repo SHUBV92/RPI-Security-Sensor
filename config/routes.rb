@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'feed/images', to: 'feed#show'
 
-  post "/", to: 'feed#create'
+  post "/", to: 'feed#create' # Method in controller
 
   root to: "feed#show"
   devise_for :users
