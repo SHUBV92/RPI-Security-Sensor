@@ -38,3 +38,7 @@ A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights
 - Build tested with Travis CI
 
 ### Setup images
+
+! Insert images from Michael
+
+! Insert diagram from https://github.com/CamJam-EduKit/EduKit2/blob/master/CamJam%20Edukit%202%20-%20RPi.GPIO/CamJam%20EduKit%202%20-%20Sensors%20Worksheet%205%20(RPi.GPIO)%20-%20Movement.pdf
