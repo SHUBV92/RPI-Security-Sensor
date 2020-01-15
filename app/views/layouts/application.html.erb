@@ -25,9 +25,11 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto">
           <% if user_signed_in? %>
+            <li><a class="nav-link"<%= link_to 'About', '/pages/about' %></li>
             <li><a class="nav-link"<%= link_to('Sign out', destroy_user_session_path, method: :delete) %></li>
               <li><a class="nav-link"<%= link_to('Security Feed', feed_images_path) %></li>
             <% else %>
+              <li><a class="nav-link"<%= link_to 'About', '/pages/about' %></li>
               <li><a class="nav-link"<%= link_to('Sign in', new_user_session_path) %></li>
               <li><a class="nav-link"<%= link_to('Sign up', new_user_registration_path) %></li>
             <% end %>

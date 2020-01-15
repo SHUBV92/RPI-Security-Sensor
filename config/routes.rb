@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'feed/images', to: 'feed#show'
 
+  get "/pages/:page" => "pages#show"
+
   post "/", to: 'feed#create' # Method in controller
 
   root :to => redirect("/users/sign_in")
