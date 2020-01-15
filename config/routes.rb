@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'feed/images', to: 'feed#images'
+
   get "/pages/:page" => "pages#show"
+
   post "/", to: 'feed#create'
 
   root to: "feed#show"
