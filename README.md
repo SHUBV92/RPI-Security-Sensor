@@ -32,7 +32,9 @@ A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights
 - Rails version 5.1.5
 - Ruby gems - see Gemfile
 - Python libraries: gpiozero, picamera, requests
-- Python testing in Unittest, Ruby testing in Rspec, website testing using Capybara
+- Python testing in Unittest
+- Ruby testing in Rspec
+- Website testing using Capybara
 - Build tested with Travis CI
 
 ### Setup images
