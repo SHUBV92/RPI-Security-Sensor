@@ -1,7 +1,7 @@
-# Security Sensor
+# RPi Security Sensor
 ## Makers October 2019 Cohort Final Project
 
-A home security system, using a Raspberry Pi. Upon detecting motion, a picture is taken, LED lights change from blue to red, and the buzzer beeps. The image is then sent to a hosted website. A notification is also sent to your phone, including a link to the picture's URL.
+A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights, a buzzer, and a camera. Upon detecting motion, a picture is taken, LED lights change from blue to red, and the buzzer beeps. The image is then sent to a hosted website. A notification is also sent to your phone, including a link to the picture's URL.
 
 ### Setting up Ruby on Rails:
 - Clone the project
