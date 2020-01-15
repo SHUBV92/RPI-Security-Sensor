@@ -25,7 +25,7 @@ A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights
 *See images below for further setup details*
 
 ### APIs used
-- IFTTT with PushOver
+- IFTTT with Slack
 
 ### Framework information
 - Python version 2.7.9
