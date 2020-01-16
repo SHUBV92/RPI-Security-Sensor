@@ -2,8 +2,9 @@ require 'base64'
 require 'date'
 
 class FeedController < ApplicationController
+  respond_to :json
   skip_before_action :verify_authenticity_token
-  # before_action :authenticate_user!
+  protect_from_forgery with: :null_session
 
   # def create
   #   @image = Base64.decode64(params[:image])
@@ -16,11 +17,13 @@ class FeedController < ApplicationController
 
 
   def create
-    Feed.create(image_string: params[:image])
+    Feed.create(image_string: params[:image], pi_key: params[:pi_key])
+    render plain: "Image Received"
   end
 
   def show
-    @images = Feed.all.order('created_at DESC')
+    # @images = Feed.all.order('created_at DESC')
+    @images = Feed.where(pi_key: current_user.pi_key).reverse
     decode
     render "feed/images"
   end

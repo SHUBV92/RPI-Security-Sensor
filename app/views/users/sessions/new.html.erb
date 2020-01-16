@@ -1,5 +1,4 @@
-<center>
-<h2>Sign in</h2>
+<h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -18,12 +17,10 @@
       <%= f.label :remember_me %>
     </div>
   <% end %>
-  <br>
 
   <div class="actions">
-    <%= f.submit "Sign in" %>
+    <%= f.submit "Log in" %>
   </div>
 <% end %>
-</center>
 
-<%= render "devise/shared/links" %>
+<%= render "users/shared/links" %>

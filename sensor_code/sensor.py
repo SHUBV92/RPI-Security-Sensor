@@ -1,18 +1,13 @@
 import requests
 import os
 import base64
+from time import sleep
 from gpiozero import MotionSensor
-from picamera import PiCamera
+from camera import cam
+from led_buzzer import *
 from encoded_img import image_manip
-from auth import (key)
+from registration import (key)
 from url import (URL)
-from led import lights_and_sound
-
-def cam():
-    camera = PiCamera()
-    camera.resolution = (500, 375)
-    camera.capture()
-    camera.close()
 
 def pir(motion_sensor):
     pir = motion_sensor(17)
@@ -22,19 +17,19 @@ def sensor(motion_sensor = MotionSensor):
     testing = os.getenv('TESTING', 'False')
     if testing == 'False':
         while True:
+            blue_on()
             pir
-            lights_and_sound()
+            system_on()
             cam()
             image = image_manip()
-            r1 = requests.post(key, URL, params = image)
-            r2 = requests.post(key)
-            print(r1)
-            print(r2)
-            print('done')
+            send_to_website = requests.post(URL, {'image' : image })
+            send_to_ifttt = requests.post(key)
+            system_off()
+            #blue_off()
+            sleep(15)
         else:
             print('testing')
             return "Motion detected"
-    time.sleep(30)
 
 if __name__ == '__main__':
     sensor()
