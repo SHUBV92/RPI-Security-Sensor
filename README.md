@@ -42,6 +42,6 @@ There are two tests for the Python code using Unittest. However we discovered th
 
 ### Setup images
 Hardware setup
-![Hardware Setup](https://github.com/SHUBV92/RPI-Security-Sensor/blob/master/setupPhotos/Screenshot%202020-01-16%20at%2014.24.11.png =300x220)
+![alt text](https://github.com/SHUBV92/RPI-Security-Sensor/blob/master/setupPhotos/Screenshot%202020-01-16%20at%2014.24.11.png)
 
 Image taken from [The Cambridge Raspberry Jam GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
