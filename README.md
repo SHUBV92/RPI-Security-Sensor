@@ -45,5 +45,5 @@ Hardware Setup
 ![alt text](https://github.com/SHUBV92/RPI-Security-Sensor/blob/master/setupPhotos/Screenshot%202020-01-16%20at%2014.24.11.png)
 
 Circuit Diagram
-![alt text](https://github.com/SHUBV92/RPI-Security-Sensor/blob/master/setupPhotos/circuit_diagram%20.png)
+![alt text](https://github.com/SHUBV92/RPI-Security-Sensor/blob/master/setupPhotos/circuit_diagram.png)
 Image taken from [The Cambridge Raspberry Jam GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
