@@ -42,6 +42,5 @@ There are two tests for the Python code using Unittest. However we discovered th
 
 ### Setup images
 
-![Circuit Diagram](https://drive.google.com/file/d/1TzACJdrsM-3Dthcg4eNuCzEOg1n_WAyM/view)
 
-Image taken from [The Cambridge Raspberry Jame GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
+Image taken from [The Cambridge Raspberry Jam GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
