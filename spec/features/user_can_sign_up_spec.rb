@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "Sign up", type: :feature do
- scenario "Can sign up" do
+ scenario "User can sign up and is redirected to Security Feed" do
    visit "/"
    click_link "Sign up"
    fill_in "Email", with: "test@test.com"
