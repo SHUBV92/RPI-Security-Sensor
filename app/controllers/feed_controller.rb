@@ -23,16 +23,8 @@ class FeedController < ApplicationController
 
   def show
     # @images = Feed.all.order('created_at DESC')
-    @images = Feed.where(pi_key: current_user.pi_key).reverse
-    decode
+    @images_array = Feed.where(pi_key: current_user.pi_key).reverse
     render "feed/images"
-  end
-
-  def decode
-    @images_array = []
-    @images.each do |image|
-      @images_array << image
-    end
   end
 end
 
