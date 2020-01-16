@@ -41,6 +41,6 @@ A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights
 
 ### Setup images
 
-[![https://drive.google.com/file/d/1TzACJdrsM-3Dthcg4eNuCzEOg1n_WAyM/view]]
+![Circuit Diagram](https://drive.google.com/file/d/1TzACJdrsM-3Dthcg4eNuCzEOg1n_WAyM/view)
 
 Image taken from [The Cambridge Raspberry Jame GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
