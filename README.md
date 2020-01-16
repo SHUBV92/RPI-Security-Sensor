@@ -37,10 +37,10 @@ A home security system, using a Raspberry Pi  with a motion sensor, 2 LED lights
 - Website testing using Capybara
 - Build tested with Travis CI
 
-### Setup images
+### Testing information for Raspberry Pi
+There are two tests for the Python code using Unittest. However we discovered that in order test that the hardware is active after it picks up motion we would need to manually stub out each piece of hardware. Instead, it was decided to add two different colour LEDs and a buzzer in order to test the activation. The blue light is on while the motion sensor waits and the red light and buzzer turn on when motion is detected. The blue light turns back on once the photo is taken and the post requests are sent to the website and to IFTTT.
 
 ### Setup images
 
-![Circuit Diagram](https://drive.google.com/file/d/1TzACJdrsM-3Dthcg4eNuCzEOg1n_WAyM/view)
 
-Image taken from [The Cambridge Raspberry Jame GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
+Image taken from [The Cambridge Raspberry Jam GitHub](https://github.com/CamJam-EduKit/EduKit2) with thanks.
