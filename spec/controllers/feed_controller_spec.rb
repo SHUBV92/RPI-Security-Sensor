@@ -3,8 +3,6 @@ require 'rails_helper'
 RSpec.describe FeedController, type: :controller do
   include Devise::Test::ControllerHelpers
 
-  # let!(:user_image) { create(:feed, pi_key: "xxxxx") }
-
   let(:user) { create(:user) }
 
   before(:all) do
@@ -12,17 +10,10 @@ RSpec.describe FeedController, type: :controller do
       factory :user do
         email { "test@2.com" }
         password { "password" }
+        pi_key { "xxxxx" }
       end
     end
   end
-
-  # before(:all) do
-  #   FactoryBot.define do
-  #     factory :feed do
-  #        { 'hello world'}
-  #     end
-  #   end
-  # end
 
   before(:each) do
     sign_in user
@@ -35,7 +26,6 @@ RSpec.describe FeedController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
-
 
 
 end
